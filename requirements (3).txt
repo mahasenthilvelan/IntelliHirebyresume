@@ -1,10 +1,6 @@
 streamlit
-pdfplumber
-python-docx
 spacy
 textstat
-docx2txt
-pyrebase
-requests
-PyPDF2
-mailslurp-client
+pdfplumber
+python-docx
+
