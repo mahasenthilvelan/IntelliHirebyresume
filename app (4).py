@@ -33,14 +33,13 @@ if uploaded_file:
         filename = tmp_file.name
 
     def extract_text(fname):
-        if fname.endswith(".pdf"):
-            with pdfplumber.open(fname) as pdf:
-                return "
-".join([p.extract_text() or "" for p in pdf.pages])
-        elif fname.endswith(".docx"):
-            return "
-".join([para.text for para in docx.Document(fname).paragraphs])
-        return ""
+       if fname.endswith(".pdf"):
+         with pdfplumber.open(fname) as pdf:
+            return "\n".join([p.extract_text() or "" for p in pdf.pages])
+       elif fname.endswith(".docx"):
+         return "\n".join([para.text for para in docx.Document(fname).paragraphs])
+       return ""
+
 
     def extract_email(text):
         match = re.search(r"[\w.-]+@[\w.-]+", text)
