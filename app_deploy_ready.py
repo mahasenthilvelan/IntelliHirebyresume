@@ -2,11 +2,10 @@
 import streamlit as st
 import re
 import tempfile
-import spacy
 import textstat
 import pdfplumber
 import docx
-
+import spacy
 # Ensure spaCy model is loaded
 try:
     nlp = spacy.load("en_core_web_sm")
