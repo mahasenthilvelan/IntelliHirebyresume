@@ -76,7 +76,7 @@ for i, q in enumerate(questions):
     st.text_input("Answer", key=f"ans{i}")
 
 # Step 12–16: Chatbot & Feedback & DB Save (Simulated)
-st.subheader("💬 AI Chatbot Kannama")
+st.subheader("💬 AI Chatbot laks")
 st.info("Type anything about your doubts, career, jobs etc.")
 
 st.subheader("📝 HR Feedback (Simulated)")
